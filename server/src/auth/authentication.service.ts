@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   authentication.service.ts                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ablondel <ablondel@student.s19.be>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/12/01 00:28:04 by ablondel          #+#    #+#             */
+/*   Updated: 2022/12/01 00:28:05 by ablondel         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 import { HttpException, HttpStatus } from '@nestjs/common';
 import { encodePassword } from 'src/bcrypt/bcrypt';
 import { CreateUserDto } from 'src/users/users.dto';
