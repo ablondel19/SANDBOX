@@ -18,7 +18,7 @@ export class AuthenticationService {
     } catch (error) {
       if (error?.code === 23505) {
         throw new HttpException(
-          'User with that email already exists.',
+          'User with the same email or login already exists.',
           HttpStatus.BAD_REQUEST,
         );
       }
